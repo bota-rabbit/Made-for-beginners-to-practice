@@ -1,0 +1,19 @@
+body {
+    font-family: "Hiragino Sans", sans-serif;
+    background-color: #fffafc;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6fa8;
+}
+
+input, button {
+    padding: 8px;
+    margin: 5px;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}

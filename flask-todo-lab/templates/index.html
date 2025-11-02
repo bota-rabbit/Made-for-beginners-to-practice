@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>🎀ミニTodoリスト🎀</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🎀 今日のやること 🎀</h1>
+
+    <form action="/add" method="POST">
+        <input type="text" name="task" placeholder="やることを入力">
+        <button type="submit">追加</button>
+    </form>
+
+    <ul>
+        {% for todo in todos %}
+            <li>
+                {% if todo.complete %}
+                    <s>{{ todo.task }}</s>
+                {% else %}
+                    {{ todo.task }}
+                {% endif %}
+                <a href="/complete/{{ todo.id }}">☑</a>
+                <a href="/delete/{{ todo.id }}">🗑️</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
