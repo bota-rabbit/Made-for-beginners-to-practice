@@ -1,0 +1,70 @@
+/* ページ全体のスタイル設定 */
+body {
+    font-family: "Hiragino Sans", sans-serif; /* 優しい日本語フォントを使用 */
+    background-color: #fffafc;              /* 淡いピンクがかった背景色 */
+    text-align: center;                       /* ページ全体の見出しなどを中央に */
+}
+
+/* ログインフォーム全体のデザイン */
+.login-form input {
+    display: inline-block;                           /* ブロック要素だが横幅に合わせて中央配置 */
+    text-align: left;                                /* 中身（ラベルや入力欄）は左寄せにする */
+    background-color: #ffffff;                     /* フォームの背景を白に */
+    padding: 20px 30px;                              /* 内側に余白をつけて見やすくする */
+    border: 2px solid #f0c6d2;                     /* 淡いピンクの枠線で囲む */
+    border-radius: 15px;                             /* 角を丸くして柔らかい印象に */
+    box-shadow: 0 0 10px rgba(240, 150, 170, 0.2); /* ほんのりピンクの影を付けて立体感を出す */
+}  
+
+/* 各ラベル（ユーザー名・パスワード）のスタイル */
+.login-form label {
+    display: inline-block; /* ラベルをブロック風に扱う（幅指定できる） */
+    width: 100px;          /* ラベルの横幅を固定して入力欄をそろえる */
+    margin-bottom: 10px;   /* ラベルと次の要素の間に少し隙間を */
+}
+
+/* 入力欄（テキストボックス・パスワードボックス）のデザイン */
+.login-form input {
+    padding: 5px;             /* 内側に余白を入れて文字がくっつかないように */
+    margin-bottom: 10px;      /* 各入力欄の間を少しあける */
+    border: 1px solid #ccc; /* 薄いグレーの枠線をつける */
+    border-radius: 5px;       /* 角を軽く丸めて柔らかい印象に */
+}
+
+/* ログインボタンのスタイル */
+.login-form button {
+    background-color: #f7a8b8; /* 淡いピンク色の背景 */
+    color: white;              /* ボタン内の文字を白に */
+    border: none;                /* 枠線を消してすっきり見せる */
+    padding: 8px 20px;           /* ボタン内に余白をつけて押しやすく */
+    border-radius: 8px;          /* 角を丸めて可愛らしく */
+    cursor: pointer;             /* マウスカーソルを「指の形」にしてクリック可能に */
+}
+
+/* ボタンにマウスをのせたときの変化（ホバー効果） */
+.login-form button:hover {
+    background-color: #f57c9a;  /* 少し濃いピンクに変化してアクティブ感を出す */
+}
+
+.register-text {
+    margin-top: 50px;  /* 「まだ登録していませんか？」の上に余白 */
+}
+
+.register-link {
+    display: inline-block; /* aタグをブロックっぽく扱う */
+    margin-top: 10px; /* 少し下に余白 */
+}
+
+h1 {
+    color: #ff6fa8;
+}
+
+input, button {
+    padding: 8px;
+    margin: 5px;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <h2>🔑 ログインページ 🔑</h2>
+
+    {% if message %}
+        <p style="color: red;">{{ message }}</p>
+    {% endif %}
+
+    <form action="{{ url_for('login')}}" method="POST" class="login-form">
+
+        <label for="username">ユーザー名：</label>
+        <input type="text" name="username" id="username" value="{{ username }}" required>
+        <br>
+        <label for="password">パスワード：</label>
+        <input type="password" name="password" id="password" value="{{ password }}" required>
+        <br>
+        <button type="submit">ログイン</button>
+    </form>
+
+    <p class="register-text">まだ登録していませんか？</p>
+    <a href="{{ url_for('register') }}" class="register-link">→ 新規登録はこちら</a>
+
+{% endblock %}
