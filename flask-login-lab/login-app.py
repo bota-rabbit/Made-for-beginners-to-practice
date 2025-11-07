@@ -15,7 +15,7 @@ login_manager.login_view = 'login'
 login_manager.login_message = "ログインが必要ですわ✨"
 
 # データベース設定
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todo.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///flask-app-lab.db'
 db = SQLAlchemy(app)
 
 # ユーザーモデル
@@ -113,5 +113,6 @@ if __name__ == '__main__':     # このファイルが直接実行されたと�
     with app.app_context():    # 「このブロックの中はこのアプリに属する処理です」とFlaskに伝える宣言
         db.create_all()        # モデルクラスに基づいてデータベースのテーブルを作成するよ
     app.run(debug=True)        # Flaskの開発用サーバーを起動、コードを編集すると自動でサーバーが再起動
+
 
 # http://localhost:5000
