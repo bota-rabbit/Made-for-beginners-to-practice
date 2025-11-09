@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <h2>🌸 ミニアプリ一覧 🌸</h2>
+
+    <p>ようこそ {{ current_user.username }} さん✨</p>
+
+    <p>1️⃣ <a href="{{ url_for('todo_main') }}">Todoアプリ</a></p>
+    <p>2️⃣ 未実装</p>
+    <p>3️⃣ 未実装</p>
+    <p>4️⃣ 未実装</p>
+
+    <a href="{{ url_for('logout') }}">ログアウト</a>
+
+{% endblock %}
