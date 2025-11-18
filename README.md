@@ -11,11 +11,11 @@ Flask を学ぶための練習プロジェクトをまとめたリポジトリ�
 
 ---
 
-🔧 使用技術
-Python
-Flask
-HTML / CSS
-Jinja2
+## 🔧 使用技術
+- Python  
+- Flask  
+- HTML / CSS  
+- Jinja2  
 
 ---
 
